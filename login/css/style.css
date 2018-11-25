@@ -1,0 +1,52 @@
+.hero-section
+{
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    margin-top: 10%;
+
+}
+.text-region
+{
+    background-color: #747474;
+    color: #00C248;
+    height: 290px;
+    margin-top: 10px;
+}
+.banner img
+{
+    float: left;
+    width: 100%;
+    text-shadow: 5 0 black;
+    height: 300px;
+    margin-top: -5px;
+}
+.banner
+{
+    width: 50%;
+}
+body
+{
+    background-color: lightgray;
+      /*background-image: url("back.jpeg");*/
+    background-size: cover;
+}
+.text-region span {
+    line-height: 1.9;
+    font-size: 18px;
+}
+.logout
+{
+    padding: 10px;
+    background-color: #00C248;
+    border: none;
+    color: white;
+    border-radius: 10%;
+    margin-top: 0px;
+    min-width: 70px;
+}
+form
+{
+    margin-bottom: 0;
+}

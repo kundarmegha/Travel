@@ -1,0 +1,41 @@
+header
+{
+width: 100%;
+height: 70px;
+background-color: black;
+}
+header h2{
+color:white;
+padding-left:20px;
+padding-top: 1px;
+display: inline-block;
+}
+.login
+{
+    float: right;
+    padding: 20px;
+    padding-top: 15px;
+    color: white;
+}
+.login button
+{
+    width: 90px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.error
+{
+    color: #d9534f;
+    flex-wrap: bold;
+}
+@media only screen and (max-width:768px)
+{
+header
+{
+    width: auto;
+    height: auto;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+}

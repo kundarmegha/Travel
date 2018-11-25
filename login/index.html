@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Registartion Form</title>
+</head>
+<body>
+<div class="col-md-12">
+    <div class="col-md-12">
+        <h3 class="text-center">
+            <span class="label label-warning">REGISTRATION FORM</span>
+        </h3>
+    </div><div class="col-md-6 col-md-offset-3">
+    <form method="POST" action="register.php" name="myForm" onsubmit="return validateForm()" enctype="multipart/form-data">
+
+            <br /><br />
+            <input type="text" class="form-control" name="fullname" placeholder="Enter Full Name" id="fullname" onblur="validatefield(this); required"><br />
+            <input type="email" class="form-control" name="email" placeholder="Enter Email" onblur="validateEmail(this);"><br />
+
+        <textarea style="width:100%;height:150px;" id="address" maxlength="300" placeholder="Address"
+                  name="paddress" maxlength="300" onkeyup="countmn()" onkeypress="countpl()"></textarea><br>
+
+        <span style="float:right;color:green;"><span id="paragraph">0</span><span> out of 300</span></span>
+<br><br>
+<!--        <div >-->
+<!--            <script type= "text/javascript" src = "js/countries.js"></script>-->
+<!--            Select Country :   <select id="country" name ="country"></select> </br></br>-->
+<!--            Select State: <select name ="state" id ="state" ></select>  </br> </br> <hr/>-->
+<!--        </div>-->
+<!---->
+<!--        <script language="javascript">-->
+<!--            populateCountries("country", "state"); // first parameter is id of country drop-down and second parameter is id of state drop-down-->
+<!--        </script>-->
+
+
+
+        <select name="country" id="country-list" class="demoInputBox" onChange="getState(this.value); mobile(this.value); pincode(country); ">
+            <option value="">Select country</option>
+       <option value="india">India</option>
+            <option value="usa">USA</option>
+        </select>
+
+        <select id="ddlCity" name="state">
+        <option value="">Select state</option>
+        </select>
+        <br><br>
+
+
+
+        <input type="number" class="form-control" name="pincode" id="pincode" placeholder="Pincode"><br />
+        <div id="mobile"></div>
+        <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone"><br />
+
+            <input type="date" size="50" name="dateofbirth" style="width: 100%; height: 30px; " class="text-center" > <br/>
+            <br><input type="text" class="form-control" name="uname" placeholder="Enter username "><br />
+        <input type="password" class="form-control" name="pasw" placeholder="password"><br />
+            <input type="password" class="form-control" name="ConfirmPassword" placeholder="confirm password" id="confirm_password"><br />
+            <div class="radio text-center">
+                <label>Select Gender</label><br/>
+                <label><input type="radio" name="Gender" value="male">Male</label>
+                <label><input type="radio" name="Gender" value="female">Female</label>
+            </div>
+        <label>Expert in</label><br>
+        <input type="checkbox" name="expert" value="html" > HTML<br>
+        <input type="checkbox" name="expert" value="css"> CSS<br>
+        <input type="checkbox" name="expert" value="javascript"> Javascript<br><br>
+<br><br>
+
+
+            <label class=" col-md-12">Languages Known</label>
+            <input type="checkbox" name="language" value="English" checked onclick="return false"> English<br>
+            <input type="checkbox" name="language" value="Kannada"> Kannada<br>
+            <input type="checkbox" name="language" value="Hindi"> Hindi<br><br>
+        <br><br>
+
+        <label><b>SSLC Marks.:</b></label><br>
+        <input type="number" placeholder="Enter SSLC marks" name="sslc" class="form-control">
+    <br><br>
+        <label ><b>PUC Marks:</b></label><br>
+        <input type="number" placeholder="Enter PUC Marks" name="pu" class="form-control">
+    <br><br>
+        <label <b>Engineering Marks</b></label><br>
+        <input type="number" placeholder="Enter Engineering marks" name="engineering" class="form-control">
+    <br><br>
+        <label <b>Hobbies</b></label><br>
+        <input type="text" placeholder="Enter hobbies" name="hobbies" class="form-control">
+        <br><br>
+        <label >Select a file</label>
+        <input type="file" name="file"><br><br>
+         <button type="submit" class="form-control btn btn-primary" onclick="return Validate();" >Submit</button><br /><br />
+    </form>
+
+   <a href="login.html"><button type="submit" class="form-control btn btn-primary"  >Login </button></a> <br /><br />
+</div>
+</div>
+<script type="text/javascript" src="js/countries.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

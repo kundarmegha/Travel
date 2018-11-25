@@ -1,0 +1,7 @@
+traits
+namespace
+encapsulation
+error handling
+ajax
+composer
+curl

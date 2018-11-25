@@ -1,0 +1,49 @@
+database should be 1NF
+
+1. name --> split into first and last name
+2. no space-trim
+3. mail--> remove domain out and keep is seperate-strstr
+4. Last name is mandatory.
+5. password validate should be minimum 12 chars 1 uppercase 1 lowercase 1 digt 1 spcl character.
+6. save pasword in encrypted format.-password_hash
+7. country before state.-
+8. dob to age.
+9. adress should contain number of characters typed out of 300 in green color.
+10. validate password using string functions.
+11. index file
+12. file be saved in database.
+13. pincode validate.
+14. 60% aggregate throughout or else adding sslc pu and be should avg 65% or no eligible.
+15. based on state picode validate.
+16. based on country validate phone number.
+
+
+xss
+csrf
+sql injection
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------
+
+full name
+email
+emp id
+password
+dob
+address
+positn
+projec
+experience
+intrest
+knowledge
+hobbies
+
+
+after login dashboard
